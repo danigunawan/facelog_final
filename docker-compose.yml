@@ -1,0 +1,21 @@
+version: '3'
+services:
+  server:
+    build: ./
+    command: python -u mainnew.py
+    ports:
+      - "5080:5080"
+    depends_on:
+      - db
+    environment:
+      - host_db=db
+    volumes:
+       - .:/app
+  db:
+    image: mongo:4.2.8
+    container_name: mongo_db
+    ports:
+      - "27018:27017"
+    volumes:
+       - /home/dsoft/Desktop/enjoywork_20200703/enjoywork:/data/db
+       - .:/app

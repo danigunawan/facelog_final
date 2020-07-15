@@ -1,0 +1,15 @@
+Keras==2.3.1
+Flask_Cors==3.0.8
+numpy==1.17.3
+tensorflow==1.15.0
+requests==2.22.0
+pyfcm==1.4.7
+sk_video==1.1.10
+Flask==1.1.2
+opencv_contrib_python==4.2.0.34
+pymongo==3.10.1
+psutil==5.7.0
+hung_utils==0.6.0
+mtcnn==0.1.0
+Pillow==7.2.0
+scikit_learn==0.22
