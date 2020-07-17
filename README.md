@@ -18,12 +18,12 @@ train_dir
 
 ```
 # Two steps for training
- * 1_run
- # load image data to numpy and extract to face embedding(128 )
+ * step_1
+ # load image data and convert to numpy extract to face embedding(128 )
  ```
  Create_embedding_.py
  ```
- * 2_run
+ * step_2
  # train for classifier 
  ``` 
  Train_Classifier_.py
