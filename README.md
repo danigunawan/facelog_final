@@ -1,7 +1,14 @@
-# facelog__face
-you show create traind dir data set
-`mkdir train_dir`
-And then you should put your dataset to train_dir
+# facelog_project
+****
+* Face recognition and face verification
+
+****
+# First
+you show create train_dir folder 
+```
+mkdir train_dir
+```
+and then put your dataset to train_dir
 ```
 train_dir
 │      
@@ -18,19 +25,21 @@ train_dir
 
 ```
 # Two steps for training
- * 1_run
- # load image data to numpy and extract to face embedding(128 )
+ ## step_1: Load image data and convert to numpy extract to face embedding(128 )
  ```
  Create_embedding_.py
  ```
- * 2_run
- # train for classifier 
+ ## step_2: Train for classifier 
  ``` 
  Train_Classifier_.py
  ```
-# For Testing 
+# For testing 
 ``` 
   python3 inference_.py
+```
+# Start system using docker
+```
+docker-compose up
 ```
 
 
