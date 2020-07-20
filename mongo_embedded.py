@@ -43,7 +43,6 @@ def get_embedded(username):
     for x in mycol.find({"name":username},{"_id":0, "embedded": 1 }):
 
         count += 1
-        print('check x in find', x)
         embedded = x.get("embedded")
         saved_str = repr(embedded)     
         reconstructed_pickle = eval(saved_str)
