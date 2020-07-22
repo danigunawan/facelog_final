@@ -35,7 +35,7 @@ from keras.models import load_model
 from mtcnn.mtcnn import MTCNN
 import pickle
 import os.path
-from verification import face_recog 
+# from verification import face_recog 
 # import face_recognition
 from extract_face import extract_face, extract_face_from_dataset
 from Inference_ import facenet_svm 

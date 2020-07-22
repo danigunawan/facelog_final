@@ -1,4 +1,4 @@
-# Flask AI Constant
+AI_PORT_DEV = 4500 #  Flask AI Constant
 """
 The default address set to 0.0.0.0 to get the real local server address
 """

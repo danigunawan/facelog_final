@@ -27,6 +27,8 @@ from tensorflow.keras.backend import clear_session
 import time
 import logging
 # from mtcnn.mtcnn import MTCNN
+from testAntiSpoof import AntiSpoof
+ASPModel = AntiSpoof()
 
 config=tf.ConfigProto()
 
@@ -51,7 +53,12 @@ class facenet_svm():
 	def predict_face(self,image):
 		#detect face
 		extracted_face = extract_face(image)
+		
 		if extracted_face.ndim == 3:
+			# print('exrtraac face shape', extracted_face.shape)
+			################
+			ASPModel.pre_(extracted_face)
+			##################
 			# get face embedding 
 			image_embedding = self.facenet_model.get_embedding(extracted_face)
 			image_embedding = np.expand_dims(image_embedding, axis=0)
