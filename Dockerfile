@@ -60,7 +60,6 @@ RUN pip install -i https://test.pypi.org/simple/ hung-utils==0.6.0
 
 RUN pip install --upgrade pip
 
-ADD . /app
 
 WORKDIR /app
 
